@@ -1,0 +1,10 @@
+﻿@model IEnumerable<SchoolDatabase.Models.Teacher>
+
+<h1>Teacher List</h1>
+<ul>
+    @foreach (var teacher in Model)
+    {
+        <li>@teacher.FirstName @teacher.LastName - @teacher.Subject</li>
+    }
+</ul>
+
